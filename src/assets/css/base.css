@@ -1,0 +1,86 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, button, select, textarea {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+li {
+    list-style: none;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
+.flex-row-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-column-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #dddee0;
+    border-radius: 5px;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.line-clamp1 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+
+.CodeMirror-scroll,
+.CodeMirror {
+    min-height: 100px !important;
+    height: auto !important;
+    background-color: transparent !important;
+}
+
+.CodeMirror-gutters {
+    border: 0 !important;
+    background-color: #fff !important;
+}
+
+.cm-s-idea .CodeMirror-activeline-background {
+    background-color: #e8f2ff !important;
+}

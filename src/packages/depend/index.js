@@ -1,0 +1,5 @@
+import "@/assets/icons/index"
+import "@/assets/css/base.css"
+import "@/components/index"
+import "@/packages/plugins/index"
+import "@/packages/utils/index"

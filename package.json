@@ -1,0 +1,40 @@
+{
+  "name": "h5ve-design",
+  "version": "0.1.0",
+  "author": {
+    "name": "h5ve团队",
+    "email": "h5ve@qq.com",
+    "url": "http://www.h5ve.com"
+  },
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "compile": "vue-cli-service build --target lib --name design src/packages/design.vue",
+    "plugin": "vue-cli-service build --target wc  --name design src/packages/design.vue"
+  },
+  "dependencies": {
+    "axios": "0.18.1",
+    "codemirror": "^5.63.3",
+    "core-js": "^3.6.5",
+    "element-ui": "2.15.6",
+    "js-cookie": "2.2.0",
+    "vab-player": "^0.0.5",
+    "vab-quill": "^0.0.4",
+    "vue": "^2.6.11",
+    "vue-i18n": "^8.27.1",
+    "vue-router": "^3.2.0",
+    "vue-sketch-ruler": "^1.0.3",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.15",
+    "@vue/cli-plugin-vuex": "~4.5.15",
+    "@vue/cli-service": "~4.5.15",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "svg-sprite-loader": "^6.0.11",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
