@@ -179,16 +179,17 @@ export default {
       let canvas = document.getElementById("wrapperCanvas");
       let width = (this.screen.width - this.views.width) / 2;
       let height = (this.screen.height - this.views.height) / 2;
-      canvas.style.left = width + "px";
+      //canvas.style.left = width + "px";
       canvas.style.top = height + "px";
 
       const {scrollWidth, offsetWidth, scrollHeight, offsetHeight} = this.$refs.screensRef;
       let scrollLeft = (scrollWidth - offsetWidth) / 2;
       let scrollTop = (scrollHeight - offsetHeight) / 2;
 
-      this.$refs.screensRef.scrollLeft = scrollLeft;
+      //this.$refs.screensRef.scrollLeft = scrollLeft;
       let left = canvas.getBoundingClientRect().left;
-      this.$refs.screensRef.scrollLeft = scrollLeft + left - 340;
+      //让画布横向居中
+      canvas.style.left = offsetWidth / 2 - this.views.width / 2 + "px";
 
       this.$refs.screensRef.scrollTop = scrollTop;
       let top = canvas.getBoundingClientRect().top;
